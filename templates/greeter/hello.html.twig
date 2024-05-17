@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeter App</title>
+    </head>
+<body>
+    <h1>Hello World!</h1>
+    {% if message is not null %}
+    <p>Hello, {{ message }}</p>
+    {% else %}
+        <p>Welcome! Please enter your name below:</p>
+        {{ include('form.html.twig', {'form': form}) }}
+    {% endif %}
+
+</body>
+</html>
