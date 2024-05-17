@@ -24,12 +24,11 @@ class TestController extends AbstractController
 
     #[Route('/greeter', name: 'app_greeter')]
     public function helloWorld(Request $request, GreeterInterface $greeter): Response
-
     {
         $userForm = $this->createForm(UserType::class);
         $userForm->handleRequest($request);
     
-        $message = 'Hello World!';
+        $message = 'Hello World!'; 
     
         if ($userForm->isSubmitted() && $userForm->isValid()) {
             $data = $userForm->getData();

@@ -31,4 +31,5 @@ services:
     # please note that last definitions always *replace* previous ones
 
     App\Command\GreetCommand:
-        tags: [ { name: 'console.command' } ]
+        class: App\Command\GreetCommand
+        tags: ['console.command']
