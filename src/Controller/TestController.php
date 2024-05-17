@@ -29,7 +29,7 @@ class TestController extends AbstractController
         $userForm = $this->createForm(UserType::class);
         $userForm->handleRequest($request);
     
-        $message = 'Hello World!';  // Default message
+        $message = 'Hello World!';
     
         if ($userForm->isSubmitted() && $userForm->isValid()) {
             $data = $userForm->getData();

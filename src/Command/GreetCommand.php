@@ -9,12 +9,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class GreetCommand extends Command
 {
-    protected static $defaultName = 'app:greet'; // Set the command name
+    protected static $defaultName = 'app:greet';
 
     protected function configure()
     {
         $this
-            ->setDescription('Greets the user with a personalized message.')
+            ->setDescription('Greets the user.')
             ->addArgument('name', InputArgument::OPTIONAL, 'Your name');
     }
 

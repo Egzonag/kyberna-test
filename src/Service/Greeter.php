@@ -8,6 +8,6 @@ class Greeter implements GreeterInterface
 {
     public function greet(string $name): string
     {
-        return "Hello, $name!"; // Your greeting logic
+        return "Hello, $name!"; 
     }
 }
